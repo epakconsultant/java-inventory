@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="204.0" prefWidth="433.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="subjectinventory.AddDialogControllerWindow">
+    <stylesheets>
+        <URL value="@SubjectInventory.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="textId" layoutX="78.0" layoutY="41.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="textTitle" layoutX="76.0" layoutY="80.0" prefHeight="25.0" prefWidth="343.0" />
+      <TextField fx:id="textCredit" layoutX="78.0" layoutY="120.0" prefHeight="25.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboCategory" layoutX="78.0" layoutY="162.0" prefWidth="150.0" />
+      <Button fx:id="buttonAdd" layoutX="257.0" layoutY="162.0" mnemonicParsing="false" onAction="#handleButtonAddAction" prefHeight="25.0" prefWidth="73.0" text="Add" />
+      <Button fx:id="buttonCancel" layoutX="344.0" layoutY="162.0" mnemonicParsing="false" onAction="#handleButtonCancelAction" prefHeight="25.0" prefWidth="73.0" text="Cancel" />
+      <Label layoutX="14.0" layoutY="14.0" text="Enter new Course ID, title, credit and category" />
+      <Label alignment="CENTER_RIGHT" layoutX="51.0" layoutY="45.0" text="ID:" />
+      <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="84.0" prefHeight="17.0" prefWidth="52.0" text="Title:" />
+      <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="124.0" prefHeight="17.0" prefWidth="52.0" text="Credit:" />
+      <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="166.0" prefHeight="17.0" prefWidth="52.0" text="Category:" />
+   </children>    
+</AnchorPane>
